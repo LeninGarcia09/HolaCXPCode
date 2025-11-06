@@ -1,0 +1,37 @@
+# Stock Analysis Project Requirements
+# Install with: pip install -r requirements.txt
+
+# Core data manipulation and analysis
+pandas>=1.5.0
+numpy>=1.21.0
+
+# Financial data fetching
+yfinance>=0.2.0
+requests>=2.28.0
+
+# Visualization libraries
+plotly>=5.15.0
+matplotlib>=3.5.0
+
+# Web interface (optional but recommended)
+streamlit>=1.25.0
+
+# Excel export functionality
+openpyxl>=3.0.0
+
+# Environment variable management
+python-dotenv>=1.0.0
+
+# Optional: Additional financial analysis libraries
+# Uncomment if you plan to use these:
+# scipy>=1.9.0
+# scikit-learn>=1.1.0
+# ta>=0.10.0
+# fredapi>=0.5.0
+
+# Development and testing (optional)
+# Uncomment for development:
+# pytest>=7.0.0
+# black>=22.0.0
+# flake8>=5.0.0
+# mypy>=0.991
