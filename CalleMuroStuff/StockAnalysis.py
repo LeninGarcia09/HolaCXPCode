@@ -488,14 +488,13 @@ def main(argv=None):
         run_unit_tests()
         return 0
 
-    if STREAMLIT_AVAILABLE:
-        # If streamlit is available, instruct the user to run via streamlit instead
-        print('Streamlit detected. To use the interactive app, run: streamlit run', sys.argv[0])
-        print('Falling back to CLI runner for this invocation...')
-
     run_cli(args)
     return 0
 
 
 if __name__ == '__main__':
     raise SystemExit(main())
+else:
+    # We're being imported by Streamlit, run the app
+    if STREAMLIT_AVAILABLE:
+        run_streamlit_app()
